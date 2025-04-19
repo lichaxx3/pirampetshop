@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>makanan kucing | PiramPetShop</title>
+    <link rel="stylesheet" href="/css/makanan_kucing.css"> <!-- link css-->
+</head>
+<body>
+    <!-- navbar -->
+  <header>
+    <div class="logo">
+      <span class="red">P</span><span class="blue">iram</span><span class="yellow">PetShop</span>
+    </div>
+    <nav id="nav">
+      <a href="/home.html">Home</a>
+      <a href="/makanan_kucing/makanan_kucing.html">Makanan Kucing</a>
+      <a href="/makanan_anjing/makanan_anjing.html">Makanan Anjing</a>
+      <a href="#">Aksesoris</a>
+      <a href="#">Kontak</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+  <!-- navbar -->
+
+  <div class="section-pertama">
+    <!-- search -->
+    <div class="search-container">
+      <input type="text" class="search-bar" id="search" placeholder="Cari produk..." onkeyup="searchFunction()">
+      <span class="search-icon">🔍</span>
+    </div>
+    <!-- end search -->
+      <h2>Ter-Favorite</h2>
+      <div class="product-container">
+          <!-- Card 1 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 2 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 3 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 4 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 5 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 6 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 7 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 7 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 8 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 9 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 10 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- section kedua -->
+  <div class="section-kedua">
+      <h2>Royal Canin</h2>
+      <div class="product-container">
+          <!-- Card 1 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 2 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 3 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 4 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 5 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 6 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 7 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 7 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 8 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 9 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 10 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end section kedua -->
+
+<!-- section ketiga -->
+  <div class="section-kedua">
+      <div class="product-container">
+          <!-- Card 1 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 2 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 3 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 4 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 5 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 6 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 7 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 7 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 8 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 9 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+          <!-- Card 10 -->
+          <div class="product-card">
+      <img src="https://static.wikia.nocookie.net/disney/images/6/64/Profile_-_Spider-Man.png/revision/latest?cb=20220320010954" alt="Whiskas">
+      <h3>Whiskas Tuna 1kg</h3>
+      <p>Rp 55.000</p>
+      <div class="btn-group">
+          <button class="btn-beli">Beli</button>
+        <button class="btn-fav" onclick="toggleFavorite(this)">♡</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <!-- Bagian Sosial Media -->
+    <div class="footer-social">
+      <h4>Ikuti Kami</h4>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Facebook"> Facebook</a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram"> Instagram</a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp"> WhatsApp</a>
+    </div>
+
+    <!-- Bagian Lokasi -->
+    <div class="footer-map">
+      <h4>Lokasi Kami</h4>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15855.225531518689!2d106.7347033173076!3d-6.546115364185396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c364dfefbcb1%3A0xdb124b7f0fcbd0a2!2sPiram%20Pet%20Shop!5e0!3m2!1sid!2sid!4v1745043598460!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Bagian Pembayaran -->
+    <div class="footer-payments">
+      <h4>Metode Pembayaran</h4>
+      <div class="payment-icons">
+        <img src="https://asset-2.tstatic.net/bangka/foto/bank/images/20220117-logo-bca.jpg" alt="BCA">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUA2kqUQIf_RTz3evvjkgAjnKC_piTxR0RUg&s" alt="BRI">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQulxxp-NP3mq2_8e2xshE9zMdRqBfXTMJ79A&s" alt="GoPay">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGZF_H-nIjv4qJrasRJ4fZHBdezTXNM-ktUg&s" alt="dana" style="height:30px;">
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 PiramPetShop. Dibuat dengan ❤️ oleh Imam Dermawan.</p>
+  </div>
+</footer>
+<!-- end footer -->
+  
+  <script src="/js/makanan_kucing.js"></script> <!-- link js -->
+</body>
+</html>

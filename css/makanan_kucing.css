@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fffdd0;
+  }
+
+/* navigation bar */
+
+  header {
+    background-color: #fffdd0; /* warna cream */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+    z-index: 1008;
+    border-bottom: 1px solid red;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .logo span.red { color: red; }
+  .logo span.blue { color: blue; }
+  .logo span.yellow { color: goldenrod; }
+
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  /* animasi */
+  nav a {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+  }
+  
+  nav a::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6347; /* warna underline, bisa diganti */
+    transition: width 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff6347; /* warna teks saat hover */
+  }
+  
+  nav a:hover::before {
+    width: 100%;
+  }
+  /* end animasi */
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #fffdd0;
+      width: 150px;
+      display: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    nav.active {
+      display: flex;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+  }
+
+  /* end navigation bar */
+
+  /* section pertama */
+
+  /* search */
+  .search-container {
+    width: 100%;
+    max-width: 250px;
+    position: relative;
+  }
+  
+  .search-bar {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #333;
+    transition: all 0.4s ease;
+    height: 12px;
+  }
+  
+  .search-bar:focus {
+    border-color: #0066cc;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 102, 204, 0.5);
+  }
+  
+  .search-bar::placeholder {
+    color: #aaa;
+    font-style: italic;
+    transition: opacity 0.3s ease;
+  }
+  
+  .search-bar:focus::placeholder {
+    opacity: 0;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 85%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  
+  .search-bar:focus + .search-icon {
+    color: #0066cc;
+  }
+  
+  /* Responsif untuk perangkat kecil */
+  @media (max-width: 768px) {
+    .search-bar {
+      font-size: 14px;
+    }
+  
+    .search-icon {
+      font-size: 16px;
+    }
+  }
+
+  .section-pertama{
+    padding: 12px;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: right;
+    margin-right: 16px;
+  }
+
+  .product-container {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .product-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 16px;
+    min-width: 250px;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 12px;
+  }
+
+  .product-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .product-card p {
+    color: orange;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .btn-beli {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .btn-fav {
+    font-size: 20px;
+    color: gray;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-fav.active {
+    color: red;
+  }
+
+  /* Responsive Scrollbar Hidden for Better Look */
+  .product-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* section kedua */
+  .section-kedua{
+    margin: 12px;
+  }
+  /* end section kedua */
+
+         /* footer */
+         .site-footer {
+          background-color: #333;
+          color: #fff;
+          padding: 40px 20px 20px;
+          font-size: 0.95rem;
+        }
+        
+        .footer-top {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          gap: 30px;
+          margin-bottom: 30px;
+        }
+        
+        .footer-top h4 {
+          font-size: 1.2rem;
+          margin-bottom: 10px;
+          color: #fcd34d;
+        }
+        
+        .footer-social a {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          color: #fff;
+          text-decoration: none;
+          margin: 5px 0;
+        }
+        
+        .footer-social a:hover {
+          color: #fcd34d;
+        }
+        
+        .footer-map iframe {
+          width: 300px;
+          height: 200px;
+          border-radius: 8px;
+          border: none;
+        }
+        
+        .footer-payments .payment-icons {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          align-items: center;
+        }
+        
+        .footer-payments img {
+          height: 35px;
+          background: #fff;
+          padding: 4px;
+          border-radius: 6px;
+        }
+        
+        .footer-bottom {
+          text-align: center;
+          border-top: 1px solid #444;
+          padding-top: 10px;
+          font-size: 0.85rem;
+        }
+        /*end footer */
